@@ -23,3 +23,12 @@ Starting from the root directory of the project, do the following:
 
     cd setup
     source emsdk/emsdk_env.sh  --build=Release
+
+## Running Web Page
+
+In order to run the web page start the web server
+
+    cd server
+    python3 server.py
+
+Then open http://localhost:8080 in a browser
