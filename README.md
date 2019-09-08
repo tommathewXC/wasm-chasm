@@ -24,11 +24,26 @@ Starting from the root directory of the project, do the following:
     cd setup
     source emsdk/emsdk_env.sh  --build=Release
 
-## Running Web Page
+## Running Web Pages
 
-In order to run the web page start the web server
+### Test Page
 
-    cd server
+In order to run the test page start the web server on port 8081
+
+    cd src
+    make test
+    cd ../server
+    python3 test_server.py
+
+Then open http://localhost:8081 in a browser
+
+### Main Page
+
+In order to run the main page start the web server on port 8080
+
+    cd src
+    make main
+    cd ../server
     python3 server.py
 
 Then open http://localhost:8080 in a browser
