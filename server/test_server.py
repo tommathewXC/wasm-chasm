@@ -6,7 +6,7 @@ public_root = "{}/public".format( os.getcwd() )
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.render('main.html')
+        self.render('test.html')
 
 
 handlers = [
@@ -23,5 +23,5 @@ settings = dict(
 application = web.Application(handlers, **settings)
 
 if __name__ == "__main__":
-    application.listen(8080)
+    application.listen(8081)
     tornado.ioloop.IOLoop.instance().start()
