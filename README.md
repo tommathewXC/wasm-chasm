@@ -21,6 +21,11 @@ Starting from the root directory of the project, do the following:
     
 ### Development setup
 
+The emsdk environment script will have to be sourced to be able to
+build C/C++ source code with the emscripten toolchain. It is possible
+to put the contents of this into bashrc or /etc/environment, but I'm
+far too lazy to do that right now.
+
     cd setup
     source emsdk/emsdk_env.sh  --build=Release
 
